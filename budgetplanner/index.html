@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deals</title>
+   
+    <script src="create_table.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body onload="CreateTableFromJSON()">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Deal Id</th>
+                <th>client_name</th>
+                <th>project_name</th>
+                <th>project_manager</th>
+                <th>project_cost</th>
+                <th>DELETE</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+
+        </tbody>
+    </table>
+    <div align="center"></div>
+    <H3>Add New Deal</H3>
+
+    <li><label>Client Name</label>
+        <input type="text" id="clientNameInput" />
+    </li>
+    <li> <label>Project Name</label>
+        <input type="text" id="projectNameInput" />
+    </li>
+    <li> <label>Project Manager</label>
+        <input type="text" id="projectManagerInput" />
+    </li>
+    <li><label>Project Cost</label> 
+        <input type="number" id="projectCostInput" />
+    </li>
+
+    </div>
+
+    <input type="button" onclick="AddNewDeal()" value="Save" />
+
+    <a href="finance.html" target="_blank"><button>finance department</button></a>
+
+</body>
+
+</html>
